@@ -1,2 +1,3 @@
-# marked
-Marked collects highlights from your browser.
+# Marked
+
+An experimental language server protocol implementation for text files.

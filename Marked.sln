@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.31911.260
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0ABB52FE-8C8B-4EBA-8008-E3264B8EA3C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Marked", "src\Marked\Marked.csproj", "{D1D96AB3-6426-4B07-863E-925A7F7B6D58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C78468B6-3F46-42A4-9328-C594575751FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Marked.Tests", "tests\Marked.Tests\Marked.Tests.csproj", "{B42B8D9C-1C67-4F14-BBEF-A6E813828BA7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{5BD4F542-F058-46CB-BA9E-C2BC46A71E49}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\dependencies.props = scripts\dependencies.props
+		scripts\settings.targets = scripts\settings.targets
+		scripts\stylecop.json = scripts\stylecop.json
+		scripts\stylecop.ruleset = scripts\stylecop.ruleset
+		scripts\stylecop.test.ruleset = scripts\stylecop.test.ruleset
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1D96AB3-6426-4B07-863E-925A7F7B6D58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1D96AB3-6426-4B07-863E-925A7F7B6D58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1D96AB3-6426-4B07-863E-925A7F7B6D58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1D96AB3-6426-4B07-863E-925A7F7B6D58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B42B8D9C-1C67-4F14-BBEF-A6E813828BA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B42B8D9C-1C67-4F14-BBEF-A6E813828BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B42B8D9C-1C67-4F14-BBEF-A6E813828BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B42B8D9C-1C67-4F14-BBEF-A6E813828BA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D1D96AB3-6426-4B07-863E-925A7F7B6D58} = {0ABB52FE-8C8B-4EBA-8008-E3264B8EA3C3}
+		{B42B8D9C-1C67-4F14-BBEF-A6E813828BA7} = {C78468B6-3F46-42A4-9328-C594575751FB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F398301-AB98-4C28-B12E-89E24937A556}
+	EndGlobalSection
+EndGlobal
