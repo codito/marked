@@ -20,6 +20,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{5BD4
 		scripts\stylecop.test.ruleset = scripts\stylecop.test.ruleset
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{10D74DFA-BE93-411E-8C68-017576B27685}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{833641A9-3504-464D-A137-0C962883B049}"
+	ProjectSection(SolutionItems) = preProject
+		build.yml = build.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +48,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D1D96AB3-6426-4B07-863E-925A7F7B6D58} = {0ABB52FE-8C8B-4EBA-8008-E3264B8EA3C3}
 		{B42B8D9C-1C67-4F14-BBEF-A6E813828BA7} = {C78468B6-3F46-42A4-9328-C594575751FB}
+		{833641A9-3504-464D-A137-0C962883B049} = {10D74DFA-BE93-411E-8C68-017576B27685}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8F398301-AB98-4C28-B12E-89E24937A556}

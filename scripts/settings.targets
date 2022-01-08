@@ -50,7 +50,7 @@
   </ItemGroup>
 
   <!-- Test project settings -->
-  <Choose>
+  <!--<Choose>
     <When Condition="$(TestProject) == 'true'">
       <ItemGroup>
         <PackageReference Include="MSTest.TestFramework">
@@ -67,7 +67,7 @@
         </PackageReference>
       </ItemGroup>
     </When>
-  </Choose>
+  </Choose>-->
 
   <!-- Code analysis settings -->
   <PropertyGroup>
