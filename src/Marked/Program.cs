@@ -3,6 +3,10 @@
 
 namespace Marked;
 
-public class Class1
+public static class Program
 {
+    public static async Task MainAsync(string[] args)
+    {
+        await Task.Delay(500);
+    }
 }
