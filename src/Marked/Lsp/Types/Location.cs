@@ -67,47 +67,8 @@ public enum FailureHandlingKind
 }
 
 /// <summary>
-/// Client capabilities for <see cref="WorkspaceEdit"/>.
-/// </summary>
-/// <param name="DocumentChanges">
-/// The client supports versioned document changes in <see cref="WorkspaceEdit"/>.
-/// </param>
-/// <param name="ResourceOperations">
-/// The resource operations the client supports. Clients should at least
-/// support 'create', 'rename' and 'delete' files and folders.
-///
-/// Since 3.13.0.
-/// </param>
-/// <param name="FailureHandlingKind">
-/// The failure handling strategy of a client if applying the workspace edit
-/// fails.
-///
-/// Since 3.13.0.
-/// </param>
-/// <param name="NormalizeLineEndings">
-/// Whether the client normalizes line endings to the client specific
-/// setting.
-/// If set to `true` the client will normalize line ending characters
-/// in a workspace edit to the client specific new line character(s).
-///
-/// Since 3.16.0.
-/// </param>
-/// <param name="ChangeAnnotationSupport">
-/// Whether the client in general supports change annotations on text edits,
-/// create file, rename file and delete file changes.
-///
-/// Since 3.16.0.
-/// </param>
-public record WorkspaceEditClientCapabilities(
-    bool? DocumentChanges,
-    ResourceOperationKind[] ResourceOperations,
-    FailureHandlingKind[] FailureHandlingKind,
-    bool? NormalizeLineEndings,
-    ChangeAnnotationSupport? ChangeAnnotationSupport);
-
-/// <summary>
 /// Settings to represent client support for change annotations on text edits.
-/// <seealso cref="WorkspaceEditClientCapabilities.ChangeAnnotationSupport"/>.
+/// See also <c>WorkspaceEditClientCapabilities.ChangeAnnotationSupport</c>.
 ///
 /// Since 3.16.0.
 /// </summary>
