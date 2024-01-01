@@ -7,8 +7,8 @@
   <PropertyGroup>
     <!-- Versioning is defined from the build script. Use a default dev build if it's not defined.
          Sets the AssemblyVersion, AssemblyFileVersion and AssemblyInformationalVersion -->
-    <Version Condition="'$(Version)' == ''">$(SourcePrefix)</Version>
-    <PackageVersion Condition="'$(PackageVersion)' == ''">$(SourcePrefix)</PackageVersion>
+    <Version Condition="'$(Version)' == ''">$(SourcePrefix)-dev</Version>
+    <PackageVersion Condition="'$(PackageVersion)' == ''">$(SourcePrefix)-dev</PackageVersion>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
@@ -50,7 +50,7 @@
   </ItemGroup>
 
   <!-- Test project settings -->
-  <!--<Choose>
+  <Choose>
     <When Condition="$(TestProject) == 'true'">
       <ItemGroup>
         <PackageReference Include="MSTest.TestFramework">
@@ -67,7 +67,7 @@
         </PackageReference>
       </ItemGroup>
     </When>
-  </Choose>-->
+  </Choose>
 
   <!-- Code analysis settings -->
   <PropertyGroup>
